@@ -1,0 +1,73 @@
+/* Anything between these two tags will be ignored by the browser */
+
+h1 {
+    color: red;
+    background-color: aquamarine;
+}
+
+h2 {
+    color: orange;
+    background-color: black;
+}
+
+h3 {
+
+    color: teal;
+    background-color: blanchedalmond;
+
+}
+
+h4 {
+    color: purple;
+    background-color: beige;
+
+}
+
+.specialp {
+
+    color: black;
+    background-color: #ff0000;
+
+}
+
+#specialID {
+    color: green;
+    background-color: #ffff33f9;
+
+}
+
+.orangebg {
+    color: green;
+    background-color: orange;
+
+}
+
+
+.spanstyle {
+    color: blue;
+
+
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: green;
+
+}
