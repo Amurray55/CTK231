@@ -1,0 +1,102 @@
+/* Anything between these two tags will be ignored by the browser */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(Zoo.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+h1 {
+    color: orange;
+    background-color: aquamarine;
+    font-style: italic;
+    font-weight: normal;
+}
+
+h2 {
+    color: orange;
+    background-color: black;
+    font-style: italic;
+    font-weight: normal;
+}
+
+h3 {
+
+    color: orange;
+    background-color: blanchedalmond;
+    font-style: italic;
+    font-weight: normal;
+
+}
+
+h4 {
+    color: orange;
+    background-color: beige;
+    font-style: italic;
+    font-weight: normal;
+
+}
+
+.imgbox {
+
+    border: 20px solid black;
+    padding: 8px;
+    margin: 20px;
+    background-color: yellow;
+
+
+}
+
+.specialp {
+
+    color: black;
+    background-color: #ff0000;
+    text-align: justify;
+}
+
+#specialID {
+    color: green;
+    background-color: #ffff33f9;
+    text-align: center;
+
+}
+
+.orangebg {
+    color: green;
+    background-color: orange;
+    text-align: justify;
+}
+
+
+.spanstyle {
+    color: blue;
+
+
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: green;
+
+}
