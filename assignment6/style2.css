@@ -1,0 +1,130 @@
+body {
+    background-image: url(a62.png);
+
+}
+
+
+
+#wrapper {
+
+    background-color: white;
+    border: 1px solid black;
+    width: 1200px;
+    margin: 1em auto;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+
+}
+
+nav ul {
+    font-family: Helvetica;
+    list-style-type: none;
+    grid-column: span 3;
+    padding-left: 5px;
+    padding-bottom: 3px;
+    margin: 0;
+
+
+}
+
+
+nav li {
+
+
+    width: 150px;
+    padding: 0px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: red;
+    display: block;
+
+
+}
+
+nav li a {
+
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: red;
+}
+
+nav li a:hover {
+
+    background-color: darkred;
+
+}
+
+
+.floatimg {
+
+
+    float: left;
+    padding-right: 10px;
+
+}
+
+.clearfloat {
+
+    clear: both;
+
+}
+
+header {
+    grid-column: span 12;
+    background-color: black;
+    color: white;
+    padding-left: 24px;
+}
+
+nav {
+    grid-column: span 3;
+}
+
+main {
+
+    font-family: Georgia;
+    text-align: justify;
+    grid-column: span 9;
+
+
+}
+
+main a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+main a:visited {
+    color: red;
+    text-decoration: none;
+}
+
+main a:hover {
+
+    color: blue;
+    text-decoration: underline;
+
+
+}
+
+.para {
+
+    font-weight: bold;
+
+}
+
+footer {
+    border: 1px solid black;
+    color: white;
+    font-family: Verdana;
+    font-style: italic;
+    grid-column: span 12;
+    background-color: red;
+    padding-left: 24px;
+}
