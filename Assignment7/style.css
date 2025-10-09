@@ -1,0 +1,110 @@
+#wrapper {
+
+    background-color: white;
+    border: 3px solid blue;
+    width: 1000px;
+    margin: auto;
+    padding: 0px;
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+
+
+
+}
+
+header {
+
+    color: lightblue;
+    font-weight: normal;
+    background-color: blue;
+    grid-column: span 12;
+
+
+
+}
+
+h1 {
+
+    font-family: Arial;
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+nav {
+
+    background: linear-gradient(blue, rgb(92, 92, 226));
+    grid-column: span 12;
+    padding: 0.5em 0;
+
+
+
+
+}
+
+nav ul {
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+nav li {
+
+
+
+    padding: 0px;
+    margin-bottom: 20px;
+    margin-right: 3px;
+    display: inline-block;
+
+
+}
+
+
+nav li a {
+
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: navy;
+}
+
+nav li a:hover {
+
+    background-color: blue;
+
+}
+
+main {
+
+    grid-column: span 12;
+}
+
+
+
+h2 {
+
+    color: blue;
+    border-bottom: 3px solid blue;
+
+
+}
+
+
+
+
+footer {
+
+    grid-column: span 12;
+    background-color: red;
+    border-top: 3px solid blue;
+
+
+
+}

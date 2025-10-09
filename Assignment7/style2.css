@@ -1,0 +1,264 @@
+body {
+
+    background-color: gray;
+}
+
+#wrapper {
+
+    background-color: white;
+    border: 5px solid #0b4c9c;
+    width: 1000px;
+    margin: auto;
+    padding: 0px;
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto 100px;
+
+
+
+}
+
+header {
+
+    color: lightblue;
+    font-weight: normal;
+    background: linear-gradient(#0380d9, #0046a2);
+    grid-column: span 12;
+    padding-left: 20px;
+    list-style-type: none;
+
+
+}
+
+header a {
+
+    text-decoration: none;
+}
+
+header a:visited {
+
+    color: lightblue;
+}
+
+header a:hover h1 {
+    color: white;
+
+}
+
+h1 {
+
+    font-family: Arial;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+
+}
+
+
+nav {
+    grid-column: span 12;
+
+    background: linear-gradient(#0046a2);
+    padding: 0.5em 0;
+
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 4px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    width: 225px;
+    font-family: Arial;
+    text-align: left;
+    color: lightblue;
+    padding: 10px 0;
+    padding-left: 20px;
+    background: linear-gradient(#0380d9, #0046a2);
+    text-decoration: none;
+    font-weight: bold;
+
+
+}
+
+nav li a:hover {
+    color: white;
+    background: blue;
+
+}
+
+.hide {
+
+    color: transparent;
+}
+
+
+
+
+
+main.home {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 300px 630px;
+    gap: 20px;
+
+
+}
+
+
+.left-column {
+    font-family: Georgia;
+    text-align: justify;
+    font-weight: bold;
+    background-color: rgb(173, 217, 230);
+    padding: 0px 15px;
+}
+
+main.about {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 610px 335px;
+    gap: 20px;
+    padding-left: 15px;
+
+}
+
+.left-column2 {
+    font-family: Georgia;
+    font-weight: bold;
+    text-align: justify;
+    width: 94%;
+    background-color: rgb(173, 217, 230);
+    padding: 20px;
+}
+
+/*.right-column {
+    place holder
+
+
+}*/
+
+.right-column2 {
+
+    grid-template-columns: 600px;
+    font-family: Georgia;
+
+}
+
+main.gallery {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 310px 310px 310px;
+    gap: 15px;
+    padding-left: 20px;
+
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.gallery-item img {
+    width: 100%;
+}
+
+main a {
+    display: inline;
+    text-decoration: none;
+    font-weight: bold;
+    color: red;
+}
+
+main a:visited {
+
+    color: red;
+
+}
+
+main a:hover {
+    color: blue;
+}
+
+
+
+
+h2 {
+
+    font-family: Arial;
+    font-weight: normal;
+    color: rgba(7, 7, 183, 0.772);
+    border-bottom: 3px solid #003366;
+    margin: 10px 3px;
+    padding: 3px 3px 5px 0px;
+    text-align: left;
+}
+
+
+.floatimg {
+
+
+    float: left;
+    border: 3px solid rgba(0, 0, 139, 0.749);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+}
+
+
+
+.floatimg2 {
+
+    float: right;
+    border: 3px solid rgba(0, 0, 139, 0.749);
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+
+}
+
+.floatimg3 {
+    display: inline-block;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+
+.gallery-p {
+
+    font-family: Georgia;
+    margin-top: 0;
+    margin-bottom: 40px;
+
+}
+
+footer {
+
+    grid-column: span 12;
+    background-color: #d01d00;
+    border-top: 5px solid #0b4c9c;
+    padding: 5px;
+    text-decoration: none;
+    list-style-type: none;
+
+
+}

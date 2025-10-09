@@ -1,0 +1,125 @@
+body {
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#wrapper {
+    background-color: white;
+    border: 3px solid blue;
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    /* header, nav, main, footer */
+    gap: 0;
+}
+
+/* HEADER */
+header {
+    color: lightblue;
+    font-weight: normal;
+    background: linear-gradient(#0926cabd, #3d40f7);
+    grid-column: 1 / -1;
+    padding: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+header a:hover h1 {
+    color: white;
+}
+
+h1 {
+    font-family: Arial;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* NAVIGATION */
+nav {
+    background: black;
+    grid-column: 1 / -1;
+    padding: 0.5em 0;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {}
+
+nav a {
+    display: block;
+    padding: 10px;
+    background: linear-gradient(#0926cabd, #3d40f7);
+    color: lightblue;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgb(1, 1, 146);
+    color: white;
+}
+
+/* MAIN CONTENT */
+main {
+    display: grid;
+    grid-template-columns: 45% 50%;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left-column,
+.right-column {
+    /* now handled by grid, no float needed */
+}
+
+.left-column img.floatimg {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 3px solid rgba(0, 0, 139, 0.75);
+}
+
+/* HEADINGS */
+h2 {
+    color: blue;
+    border-bottom: 3px solid blue;
+    margin: 5px 0;
+    padding: 3px 0;
+}
+
+/* LINKS IN MAIN */
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: red;
+}
+
+main a:hover {
+    color: blue;
+}
+
+/* FOOTER */
+footer {
+    grid-column: 1 / -1;
+    background-color: rgba(209, 21, 21, 0.88);
+    border-top: 3px solid rgba(0, 0, 139, 0.75);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
