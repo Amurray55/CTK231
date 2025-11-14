@@ -1,0 +1,161 @@
+header {
+  font-family: "Gluten", cursive;
+  margin-bottom: 20px;
+  text-align: center;
+  grid-column: span 12;
+  box-shadow: 10px 10px 10px #999;
+  /* x, y, blur, color */
+  text-shadow: 2px 2px 2px #000;
+  /* x, y, blur, color */
+
+
+}
+
+body {
+  background: radial-gradient(circle at center, #0418eb, #faf8f8);
+}
+
+.body2 {
+  background: radial-gradient(circle at center, #fe4242, #faf8f8);
+}
+
+#wrapper {
+  margin: 24px auto;
+  width: 1200px;
+  padding: 24px;
+  /*background-color: #999999;*/
+  /*background: radial-gradient(circle at center, #0418eb, #faf8f8);*/
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+
+}
+
+
+
+nav {
+
+  grid-column: span 12;
+  text-align: center;
+}
+
+nav ul {
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+
+}
+
+nav li {
+
+
+  width: 250px;
+  padding: 0px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  display: inline-block;
+
+
+}
+
+
+nav li a {
+  font-family: "ltc-goudy-thirty", sans-serif;
+  font-size: larger;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background-color: navy;
+  border-radius: 16px;
+  border: 3px solid black;
+
+  transition: background-color 1.0s, width 0.5s, color 2.0s;
+  width: 75%;
+
+}
+
+nav li a:hover {
+
+  background-color: blue;
+  width: 100%;
+
+}
+
+
+
+.image {
+
+
+  max-width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+
+}
+
+.imagegallery {
+
+  grid-column: span 12;
+}
+
+.imagejuggler {
+
+  display: block;
+  width: 300%;
+  height: auto;
+  display: block;
+  margin-left: 70%;
+  margin-right: 150%;
+
+
+
+}
+
+
+.para {
+  font-family: "ltc-goudy-thirty", sans-serif;
+  grid-column: span 12;
+  text-align: center;
+  width: 100%;
+
+
+}
+
+.para2 {
+  font-family: "ltc-goudy-thirty", sans-serif;
+  grid-column: span 12;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+
+
+}
+
+
+
+
+/* style for dummy columns, delete and replace with your own CSS */
+.dummycolumn {
+  background-color: rgba(255, 0, 0, .25);
+  grid-column: span 1;
+}
+
+
+
+footer a {
+  color: grey;
+  font-size: 100px;
+
+
+}
+
+footer a:hover {
+
+  color: white;
+  font-size: 110px;
+}
