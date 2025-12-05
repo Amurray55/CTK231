@@ -1,0 +1,379 @@
+header {
+
+  font-family: "Gluten", cursive;
+  margin-bottom: 20px;
+  text-align: center;
+  grid-column: span 12;
+  /*box-shadow: 10px 10px 10px #999;*/
+  /* x, y, blur, color */
+  /*text-shadow: 2px 2px 2px #000;*/
+  /* x, y, blur, color */
+
+
+}
+
+
+/*mess around with different page layouts/colors*/
+body {
+  /* background: radial-gradient(circle at center, #0418eb, #faf8f8);*/
+  /*background-image: url("Backgroundv4Blue.png");*/
+  background: radial-gradient(circle at center, #2b305f, #faf8f8);
+}
+
+.body2 {
+  /*background: radial-gradient(circle at center, #fe4242, #faf8f8);*/
+  /*background-image: url("Backgroundv4Blue.png");*/
+  background: radial-gradient(circle at center, #2b305f, #faf8f8);
+}
+
+.bodyCircus {
+  /*background: radial-gradient(circle at center, #fe4242, #faf8f8);*/
+  /*background: radial-gradient(circle at center, #8f8b8b, #faf8f8);*/
+  background: radial-gradient(circle at center, #2b305f, #faf8f8);
+}
+
+.bodyContact {
+  /* background: radial-gradient(circle at center, #add9e6, #ffffff);*/
+  /*background: radial-gradient(circle at center, #fe4242, #faf8f8);*/
+  background: radial-gradient(circle at center, #2b305f, #faf8f8);
+}
+
+#wrapper {
+  margin: 24px auto;
+  width: 1200px;
+  padding: 24px;
+  /*background-color: #999999;*/
+  /*background: radial-gradient(circle at center, #0418eb, #faf8f8);*/
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+
+}
+
+
+
+nav {
+
+  grid-column: span 12;
+  text-align: center;
+}
+
+nav ul {
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+
+}
+
+nav li {
+
+
+  width: 250px;
+  padding: 0px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  display: inline-block;
+
+
+}
+
+
+nav li a {
+  font-family: "ltc-goudy-thirty", sans-serif;
+  font-size: larger;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background-color: navy;
+  border-radius: 16px;
+  border: 3px solid black;
+
+  transition: background-color 1.0s, width 0.5s, color 2.0s;
+  width: 75%;
+
+}
+
+nav li a:hover {
+
+  background-color: blue;
+  width: 100%;
+
+}
+
+
+
+.image {
+
+
+  max-width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+
+}
+
+
+
+.centered-gallery {
+  grid-column: 1 / -1;
+  /* span all columns of your grid */
+  display: flex;
+  justify-content: center;
+  /* center horizontally */
+
+}
+
+.gallery-and-juggler {
+  display: flex;
+  /* puts gallery and juggler side by side */
+  gap: 40px;
+  /* space between gallery and juggler */
+
+  /* center the whole section horizontally */
+  align-items: flex-start;
+  /* align top edges */
+  flex-wrap: wrap;
+  /* wrap on smaller screens */
+}
+
+.imagegallery {
+  display: flex;
+  gap: 20px;
+  /* arrange images in a row 
+  gap: 20px;
+   spacing between images 
+  justify-content: center;
+   center the row 
+  flex-wrap: wrap;
+   wrap to next line on small screens 
+  margin: 40px 0;
+  spacing above and below gallery */
+  justify-content: center;
+
+  flex-direction: row;
+  /*stack gallery images vertically */
+
+  margin-left: 200px;
+
+}
+
+
+
+
+.imagegallery img {
+  max-height: 200px;
+  /* uniform height */
+  width: auto;
+  /* maintain aspect ratio */
+  border-radius: 8px;
+  /* optional rounded corners */
+  transition: transform 0.3s;
+  /* optional hover effect */
+}
+
+
+.imagegallery a:hover img {
+  transform: scale(1.05);
+  /* zoom on hover */
+}
+
+/*.imagejuggler {
+
+  display: block;
+  width: 300%;
+  height: auto;
+  display: block;
+  margin-left: 70%;
+  margin-right: 150%;
+
+
+
+}*/
+.imagejuggler {
+  /*display: block;*/
+  margin: 40px auto;
+  /* centers the image */
+  max-width: 500px;
+  /* or whatever fits your layout */
+  width: 100%;
+  /* responsive */
+  height: auto;
+  justify-content: right;
+}
+
+.imagejuggler img {
+  max-width: 500px;
+  /* adjust size as needed */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-left: 100px;
+
+}
+
+
+.ContactMain {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  /* space between form and image */
+  grid-column: span 12;
+  margin-top: 40px;
+}
+
+.imageContact {
+  /*
+  display: inline-block block;
+  width: 200%;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+*/
+  flex-shrink: 0;
+
+
+}
+
+.imageContact img {
+  width: 450px;
+  /* adjust size as needed */
+  height: auto;
+  border-radius: 12px;
+  /* optional */
+  display: block;
+}
+
+.para {
+  font-family: sans-serif;
+  grid-column: span 12;
+  text-align: center;
+  width: 100%;
+
+
+}
+
+.para2 {
+  font-family: "ltc-goudy-thirty", sans-serif;
+  grid-column: span 12;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  font-size: larger;
+
+
+}
+
+.form iframe {
+
+  width: 500px;
+  height: 900px;
+  max-width: 100%;
+
+}
+
+
+/* style for dummy columns, delete and replace with your own CSS 
+.dummycolumn {
+  background-color: rgba(255, 0, 0, .25);
+  grid-column: span 1;
+}*/
+
+.bento-layout {
+  display: grid;
+  grid-template-columns: span 12;
+  /* left side bigger */
+  gap: 20px;
+  align-items: stretch;
+  grid-column: 1 / -1;
+  width: 100%;
+  /* span full wrapper */
+  /*margin-top: 20px;
+  grid-column: span 12;*/
+}
+
+.bento-grid {
+  display: grid;
+  /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+  gap: 20px;
+  width: 100%;
+}
+
+.bento-item {
+  /*background: #fff;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;*/
+  width: 100%;
+}
+
+.bento-item iframe,
+.bento-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+}
+
+.bento-item.tall {
+  grid-row: span 2;
+}
+
+.photo-column {
+  width: 100%;
+}
+
+.photo-column img {
+  width: 100%;
+  height: 100%;
+  /* fills column height */
+  object-fit: cover;
+  /* keeps aspect ratio, fills box */
+  border-radius: 14px;
+  display: block;
+}
+
+.imageChinesepole {
+  display: flex;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+/*.imageChinesepole {
+
+  display: block;
+
+  height: auto;
+  display: block;
+  margin-left: 70%;
+  margin-right: 150%;
+
+
+
+}*/
+
+footer a {
+  color: grey;
+  font-size: 100px;
+
+
+}
+
+footer a:hover {
+
+  color: white;
+  font-size: 110px;
+}
+
+.copyright {
+  text-align: right;
+
+}
