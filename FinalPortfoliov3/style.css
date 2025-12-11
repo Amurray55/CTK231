@@ -1,0 +1,395 @@
+header {
+
+  font-family: "Gluten", cursive;
+  margin-bottom: 20px;
+  text-align: center;
+  grid-column: span 12;
+  /*box-shadow: 10px 10px 10px #999;*/
+  /* x, y, blur, color */
+  /*text-shadow: 2px 2px 2px #000;*/
+  /* x, y, blur, color */
+
+
+}
+
+
+/*mess around with different page layouts/colors*/
+body {
+  /* background: radial-gradient(circle at center, #0418eb, #faf8f8);*/
+  /*background-image: url("Backgroundv4Blue.png");*/
+  background: radial-gradient(circle at center, #2b305f, #faf8f8);
+}
+
+.body2 {
+  /*background: radial-gradient(circle at center, #fe4242, #faf8f8);*/
+  /*background-image: url("Backgroundv4Blue.png");*/
+  background: radial-gradient(circle at center, #2b305f, #faf8f8);
+}
+
+.bodyCircus {
+  /*background: radial-gradient(circle at center, #fe4242, #faf8f8);*/
+  /*background: radial-gradient(circle at center, #8f8b8b, #faf8f8);*/
+  background: radial-gradient(circle at center, #2b305f, #faf8f8);
+}
+
+.bodyContact {
+  /* background: radial-gradient(circle at center, #add9e6, #ffffff);*/
+  /*background: radial-gradient(circle at center, #fe4242, #faf8f8);*/
+  background: radial-gradient(circle at center, #2b305f, #faf8f8);
+}
+
+#wrapper {
+  margin: 24px auto;
+  width: 1200px;
+  padding: 24px;
+  /*background-color: #999999;*/
+  /*background: radial-gradient(circle at center, #0418eb, #faf8f8);*/
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+
+}
+
+
+
+nav {
+
+  grid-column: span 12;
+  text-align: center;
+}
+
+nav ul {
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+
+}
+
+nav li {
+
+
+  width: 250px;
+  padding: 0px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  display: inline-block;
+
+
+}
+
+
+nav li a {
+  font-family: "felt-tip-woman", sans-serif;
+  font-size: 30px;
+  color: rgb(254, 199, 111);
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background-color: navy;
+  border-radius: 16px;
+  border: 1px solid rgb(254, 199, 111);
+
+  transition: background-color 1.0s, width 0.5s, color 2.0s;
+  width: 75%;
+
+}
+
+nav li a:hover {
+
+  background-color: blue;
+  width: 100%;
+
+}
+
+h2 {
+  font-family: "felt-tip-woman", sans-serif;
+  grid-column: span 12;
+  text-align: center;
+  width: 100%;
+  font-size: 64px;
+  color: black;
+
+}
+
+.image {
+
+  width: 100%;
+  text-align: center;
+}
+
+.image img {
+  display: block;
+  margin: 20px;
+  margin-left: 200px;
+  width: 800px;
+  height: auto;
+  border-radius: 8px;
+
+
+}
+
+#myCarousel {
+  margin-bottom: -50px;
+  /*width: 90%;*/
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#myCarousel img {
+  justify-content: center;
+  border-radius: 12px;
+}
+
+#myCarousel .f-carousel__slide {
+  text-align: center;
+  display: block;
+
+}
+
+.f-carousel {
+  --f-arrow-pos: 25px;
+
+  --f-arrow-width: 50px;
+  --f-arrow-height: 50px;
+
+  --f-arrow-svg-width: 32px;
+  --f-arrow-svg-height: 32px;
+  --f-arrow-svg-stroke-width: 2.5;
+
+  --f-arrow-color: #000000;
+  --f-arrow-shadow: 0 6px 12px -2px rgb(50 50 93 / 25%), 0 3px 7px -3px rgb(0 0 0 / 30%);
+
+  --f-arrow-border-radius: 50%;
+  --f-arrow-bg: #757575;
+  --f-arrow-hover-bg: #f9f9f9;
+  --f-arrow-active-bg: #f0f0f0;
+}
+
+
+.centered-gallery {
+  grid-column: 1 / -1;
+  /* span all columns of your grid */
+  display: flex;
+  justify-content: center;
+  /* center horizontally */
+
+}
+
+.gallery-and-juggler {
+  display: flex;
+  /* puts gallery and juggler side by side */
+  gap: 40px;
+  /* space between gallery and juggler */
+
+  /* center the whole section horizontally */
+  align-items: flex-start;
+  /* align top edges */
+  flex-wrap: wrap;
+  /* wrap on smaller screens */
+}
+
+.imagegallery {
+  display: flex;
+  gap: 20px;
+  /* arrange images in a row 
+  gap: 20px;
+   spacing between images 
+  justify-content: center;
+   center the row 
+  flex-wrap: wrap;
+   wrap to next line on small screens 
+  margin: 40px 0;
+  spacing above and below gallery */
+  justify-content: center;
+
+  flex-direction: row;
+  /*stack gallery images vertically */
+
+  margin-left: 200px;
+
+}
+
+
+
+
+.imagegallery img {
+  max-height: 200px;
+  /* uniform height */
+  width: auto;
+  /* maintain aspect ratio */
+  border-radius: 8px;
+  /* optional rounded corners */
+  transition: transform 0.3s;
+  /* optional hover effect */
+}
+
+
+.imagegallery a:hover img {
+  transform: scale(1.05);
+  /* zoom on hover */
+}
+
+
+.imagejuggler {
+  /*display: block;*/
+  margin: 40px auto;
+  /* centers the image */
+  max-width: 500px;
+  /* or whatever fits your layout */
+  width: 100%;
+  /* responsive */
+  height: auto;
+  justify-content: right;
+}
+
+.imagejuggler img {
+  max-width: 500px;
+  /* adjust size as needed */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-left: 100px;
+
+}
+
+
+.ContactMain {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  /* space between form and image */
+  grid-column: span 12;
+  margin-top: 40px;
+}
+
+.imageContact {
+  /*
+  display: inline-block block;
+  width: 200%;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+*/
+  flex-shrink: 0;
+
+
+}
+
+.imageContact img {
+  width: 450px;
+  /* adjust size as needed */
+  height: auto;
+  border-radius: 12px;
+  /* optional */
+  display: block;
+}
+
+.para {
+  font-family: "felt-tip-woman", sans-serif;
+  font-weight: bold;
+  grid-column: span 12;
+  text-align: center;
+  width: 100%;
+  font-size: 32px;
+
+
+}
+
+.para1 {
+  font-family: "felt-tip-woman", sans-serif;
+  grid-column: span 12;
+  text-align: center;
+  width: 100%;
+  font-size: 64px;
+
+
+}
+
+.para2 {
+  font-family: "ltc-goudy-thirty", sans-serif;
+  grid-column: span 12;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 35px;
+
+
+}
+
+.para3 {
+
+  font-size: larger;
+}
+
+.form iframe {
+
+  width: 500px;
+  height: 900px;
+  max-width: 100%;
+
+}
+
+
+
+.bento-layout {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.bento-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.bento-item img,
+.bento-item iframe {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+}
+
+.imageChinesepole {
+  display: flex;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+
+footer {
+  text-align: center;
+}
+
+
+footer a {
+  color: rgb(92, 0, 153);
+  font-size: 100px;
+
+
+}
+
+footer a:hover {
+
+  color: white;
+  font-size: 110px;
+}
+
+.copyright {
+  text-align: right;
+
+}
